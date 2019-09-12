@@ -1,0 +1,14 @@
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\App.Data.DataContext.dll.config
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\App.Data.DataContext.dll
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\App.Data.DataContext.pdb
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\App.Entities.Base.dll
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\EntityFramework.dll
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\App.Entities.Base.pdb
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\EntityFramework.xml
+E:\test\App.UI.Web\App.Data.DataContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\test\App.UI.Web\App.Data.DataContext\obj\Debug\App.Data.DataContext.csprojAssemblyReference.cache
+E:\test\App.UI.Web\App.Data.DataContext\obj\Debug\App.Data.DataContext.csproj.CoreCompileInputs.cache
+E:\test\App.UI.Web\App.Data.DataContext\obj\Debug\App.Data.DataContext.csproj.CopyComplete
+E:\test\App.UI.Web\App.Data.DataContext\obj\Debug\App.Data.DataContext.dll
+E:\test\App.UI.Web\App.Data.DataContext\obj\Debug\App.Data.DataContext.pdb

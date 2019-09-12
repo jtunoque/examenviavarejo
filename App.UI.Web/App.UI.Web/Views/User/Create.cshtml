@@ -1,0 +1,120 @@
+﻿@model App.UI.Web.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar</h2>
+
+@using (Html.BeginForm())
+{
+    <div id="createUser">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div v-if="errors.length" class="alert alert-danger">
+                    <b>
+                        Informação requerida:
+                    </b>
+                    <ul>
+                        <li v-for="error in errors">{{ error }}</li>
+                    </ul>
+                    </div>
+                </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="text" class="form-control" placeholder="nome completo" v-model="name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="text" class="form-control" placeholder="email@email.com" v-model="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="SenhaHash" class="col-sm-2 control-label">Senha:</label>
+                <div class="col-md-10">
+                    <input type="password" class="form-control"  v-model="password">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="button" value="Inserir" class="btn btn-danger" v-on:click="create" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section scripts
+{
+    <script>
+        var apiUrl = "http://localhost:57231/api";
+        var registro = new Vue(
+            {
+                el: "#createUser",
+                data: {
+                    errors: [],
+                    name: "",
+                    email: "",
+                    password: "",
+                },
+                methods: {
+                    create: function () {
+
+                        this.errors = [];
+                        var hasErrorValidation = false;
+                        if (!this.name) {
+                            hasErrorValidation = true;
+                            this.errors.push('Nome requerido.');
+                        }
+                        if (!this.email) {
+                            hasErrorValidation = true;
+                            this.errors.push('Email requerido.');
+                        }
+                        if (!this.password) {
+                            hasErrorValidation = true;
+                            this.errors.push('Senha requerida.');
+                        }
+
+                        if (hasErrorValidation) {
+                            return;
+                        }
+
+                        var userInfo = {
+                            Nome: this.name,
+                            Email: this.email,
+                            SenhaHash: this.password
+
+                        };
+                        //Invocando mediante AJAX
+
+                        $.ajax({
+                            url: apiUrl + "/usuario",
+                            type: 'PUT',
+                            dataType: 'json',
+                            data: userInfo,
+                            success: function (data, textStatus, xhr) {
+                                if (data)
+                                {
+                                    app.helpers.ShowMessageSuccess("Cadastro com sucesso");
+                                    location.href = "/";
+                                }
+                            },
+                            error: function (xhr, textStatus, errorThrown) {
+                                app.helpers.ShowMessageSuccess("Cadastro com error");
+                            }
+                        });  
+           
+                    }
+                }
+            });
+
+    </script>
+
+}

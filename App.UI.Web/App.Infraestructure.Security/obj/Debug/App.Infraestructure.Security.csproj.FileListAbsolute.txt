@@ -1,0 +1,6 @@
+E:\test\App.UI.Web\App.Infraestructure.Security\bin\Debug\App.Infraestructure.Security.dll
+E:\test\App.UI.Web\App.Infraestructure.Security\bin\Debug\App.Infraestructure.Security.pdb
+E:\test\App.UI.Web\App.Infraestructure.Security\obj\Debug\App.Infraestructure.Security.csprojAssemblyReference.cache
+E:\test\App.UI.Web\App.Infraestructure.Security\obj\Debug\App.Infraestructure.Security.csproj.CoreCompileInputs.cache
+E:\test\App.UI.Web\App.Infraestructure.Security\obj\Debug\App.Infraestructure.Security.dll
+E:\test\App.UI.Web\App.Infraestructure.Security\obj\Debug\App.Infraestructure.Security.pdb

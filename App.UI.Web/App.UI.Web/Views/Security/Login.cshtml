@@ -1,0 +1,47 @@
+﻿@model App.UI.Web.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@{
+    ViewBag.Title = "Ingreso de Usuario";
+}
+
+@using (Html.BeginForm())
+{
+    if (Model != null && !String.IsNullOrWhiteSpace(Model.MensajeValidacion))
+    {
+        <div class="alert alert-danger" role="alert">@Model.MensajeValidacion</div>
+    }
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email:</label>
+                <div class="col-sm-10">
+                    @Html.EditorFor(item => item.Login, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(item => item.Login, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Senha:</label>
+                <div class="col-sm-10">
+                    @Html.EditorFor(item => item.Password, new { htmlAttributes = new { @class = "form-control", @autocomplete = "off" } })
+                    @Html.ValidationMessageFor(item => item.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-danger">Ingresar</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a href="@Url.Action("Create","User")">Quero me cadastrar</a>
+                </div>
+            </div>
+        </div>
+
+}
+
+

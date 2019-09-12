@@ -1,0 +1,6 @@
+E:\test\App.UI.Web\App.Entities.Base\bin\Debug\App.Entities.Base.dll
+E:\test\App.UI.Web\App.Entities.Base\bin\Debug\App.Entities.Base.pdb
+E:\test\App.UI.Web\App.Entities.Base\obj\Debug\App.Entities.Base.csprojAssemblyReference.cache
+E:\test\App.UI.Web\App.Entities.Base\obj\Debug\App.Entities.Base.csproj.CoreCompileInputs.cache
+E:\test\App.UI.Web\App.Entities.Base\obj\Debug\App.Entities.Base.dll
+E:\test\App.UI.Web\App.Entities.Base\obj\Debug\App.Entities.Base.pdb

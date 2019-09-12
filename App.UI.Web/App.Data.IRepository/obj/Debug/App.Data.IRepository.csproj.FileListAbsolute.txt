@@ -1,0 +1,9 @@
+E:\test\App.UI.Web\App.Data.IRepository\bin\Debug\App.Data.IRepository.dll
+E:\test\App.UI.Web\App.Data.IRepository\bin\Debug\App.Data.IRepository.pdb
+E:\test\App.UI.Web\App.Data.IRepository\bin\Debug\App.Entities.Base.dll
+E:\test\App.UI.Web\App.Data.IRepository\bin\Debug\App.Entities.Base.pdb
+E:\test\App.UI.Web\App.Data.IRepository\obj\Debug\App.Data.IRepository.csprojAssemblyReference.cache
+E:\test\App.UI.Web\App.Data.IRepository\obj\Debug\App.Data.IRepository.csproj.CoreCompileInputs.cache
+E:\test\App.UI.Web\App.Data.IRepository\obj\Debug\App.Data.IRepository.csproj.CopyComplete
+E:\test\App.UI.Web\App.Data.IRepository\obj\Debug\App.Data.IRepository.dll
+E:\test\App.UI.Web\App.Data.IRepository\obj\Debug\App.Data.IRepository.pdb
